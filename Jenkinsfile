@@ -3,7 +3,7 @@ pipeline {
 
     tools {
             // Define the Maven tool to be used in the pipeline
-            maven 'Maven'
+            maven 'maven'
         }
 
     stages {
@@ -24,14 +24,14 @@ pipeline {
         stage('Build') {
             steps {
                 // Build the Spring Boot application using Maven
-                sh 'mvnw clean package'
+                sh 'mvn clean package'
             }
         }
 
         stage('Test') {
             steps {
                 // Run tests for the Spring Boot application
-                sh 'mvnw test'
+                sh 'mvn test'
             }
         }
 
