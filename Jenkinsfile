@@ -2,11 +2,17 @@ pipeline {
     agent any
 
     stages {
+
+    stage('Debug') {
+        steps {
+            sh 'git ls-remote https://github.com/LearnCodeWithDurgesh/boot-video-stream.git'
+        }
+    }
         stage('Checkout') {
             steps {
                 // Checkout the code from your Git repository
                 git url: 'https://github.com/LearnCodeWithDurgesh/boot-video-stream.git'
-                    
+
             }
         }
 
