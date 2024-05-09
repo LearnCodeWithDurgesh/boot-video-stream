@@ -1,6 +1,11 @@
 pipeline {
     agent any
 
+    tools {
+            // Define the Maven tool to be used in the pipeline
+            maven 'Maven'
+        }
+
     stages {
 
     stage('Debug') {
