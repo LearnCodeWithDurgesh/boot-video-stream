@@ -19,14 +19,14 @@ pipeline {
         stage('Build') {
             steps {
                 // Build the Spring Boot application using Maven
-                sh 'mvn clean package'
+                sh 'mvnw clean package'
             }
         }
 
         stage('Test') {
             steps {
                 // Run tests for the Spring Boot application
-                sh 'mvn test'
+                sh 'mvnw test'
             }
         }
 
