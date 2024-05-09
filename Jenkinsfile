@@ -4,7 +4,7 @@ pipeline {
     tools {
             // Define the Maven tool to be used in the pipeline
             maven 'maven'
-            jdk 'java'
+
         }
 
     stages {
