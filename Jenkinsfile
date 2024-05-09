@@ -5,7 +5,8 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout the code from your Git repository
-                git 'https://github.com/yourusername/your-spring-boot-project.git'
+                git url: 'https://github.com/LearnCodeWithDurgesh/boot-video-stream.git'
+                    }
             }
         }
 
