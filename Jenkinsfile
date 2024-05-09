@@ -17,7 +17,7 @@ pipeline {
             steps {
                 // Checkout the code from your Git repository
                  git branch: 'main', url: 'https://github.com/LearnCodeWithDurgesh/boot-video-stream.git'
-
+                 echo 'checkout successfully'
             }
         }
 
