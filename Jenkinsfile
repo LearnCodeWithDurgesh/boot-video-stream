@@ -6,7 +6,7 @@ pipeline {
             steps {
                 // Checkout the code from your Git repository
                 git url: 'https://github.com/LearnCodeWithDurgesh/boot-video-stream.git'
-                    }
+                    
             }
         }
 
