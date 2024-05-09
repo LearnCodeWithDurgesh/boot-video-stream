@@ -3,19 +3,19 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-            echo "Checkout"
+            echo 'Checkout'
 //                 git 'https://github.com/yourusername/your-spring-boot-project.git'
             }
         }
         stage('Build') {
             steps {
-             echo "Build"
+             echo 'Build'
 //                 sh 'mvn clean package'
             }
         }
         stage('Test') {
             steps {
-             echo "Test"
+             echo 'Test'
 //                 sh 'mvn test'
             }
         }
